@@ -75,9 +75,42 @@
 </header>
 <main>
 
-	<section>
+	<section class="request">
 		<div class="container">
-			<h1>Вызвать на замер</h1>
+			<div class="request__box">
+				<div class="request__box_left">
+					<p>Стоимость замера в городе - 400 руб, за городом - уточним по телефону.</p>
+					<p>При заказе спец. предложения, где замер бесплатный - сумма учитывается в стоимости заказа</p>
+				</div>
+				<div class="request__box_rigth">
+					<h1 class="request__title">Вызвать на замер</h1>
+					<form action="">
+						<div class="request__box_row">
+							<div class="request__box_row_input">
+								<p>Как к Вам обращаться</p>
+								<input type="text" name="name" placeholder="Введите Ваше Имя">
+							</div>
+							<div class="request__box_row_input">
+								<p>Адрес замера</p>
+								<input type="text" name="adress" placeholder="Введите Ваш Адрес">
+							</div>						
+							 
+						</div>
+						<div class="request__box_row">
+							<div class="request__box_row_input">
+								<p>Телефон для связи</p>
+								<input type="text" name="tel" placeholder="Введите Ваше номер">
+							</div>
+						  
+						</div>
+						<div class="request__box_row request__box_row_checkbox">
+							<input class="checkbox_input" type="checkbox" id="request_checkbox">
+							<label class="checkbox_label" for="request_checkbox">Я согласен(а) на<pre></pre> <span> обработку персональных данных</span></label>
+						</div>
+						<button class="request__btn">Вызвать на замер</button>
+					</form>
+				</div>
+			</div>
 		</div>
 		
 	</section>

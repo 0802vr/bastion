@@ -2667,6 +2667,348 @@ button.swiper-pagination-bullet {
   letter-spacing: 0em;
 }
 
+.request__box {
+  display: flex;
+}
+
+.request__box_left {
+  width: 41%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #616161;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.request__box_left p {
+  width: 65%;
+}
+
+.request__box_rigth {
+  width: 59%;
+}
+.request__box_rigth form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.request__title {
+  margin-top: -10px;
+  margin-bottom: 20px;
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: -0.02em;
+}
+
+.request__box_row {
+  display: flex;
+  gap: 20px;
+}
+
+.request__box_row_input p {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+.request__box_row_input input {
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #B7B7B7;
+  background: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+}
+
+.request__box_row_checkbox {
+  cursor: pointer;
+}
+
+.checkbox_input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox_label {
+  cursor: pointer;
+}
+.checkbox_label pre {
+  width: 4px;
+}
+.checkbox_label span {
+  text-decoration: underline;
+}
+
+.checkbox_input + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+
+.checkbox_input + label::before {
+  content: "";
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #212121;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  margin-right: 8px;
+  margin-bottom: 2px;
+}
+
+.checkbox_input:checked + label::before {
+  border-color: #212121;
+  background-image: url("../../img/ok.svg");
+}
+
+.request__btn {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #212121;
+  background: #212121;
+}
+
+.contacts {
+  margin-bottom: 130px;
+}
+
+.contacts__box {
+  margin-left: 41%;
+}
+
+.contacts__title {
+  font-size: 76px;
+  font-weight: 600;
+  line-height: 84px;
+  letter-spacing: -0.02em;
+  margin-bottom: 10px;
+}
+
+.contacts__text {
+  width: 65%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #616161;
+}
+
+.contacts__link {
+  color: #212121;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.contacts__link div {
+  background-image: url(../../img/contacts/Black.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 34px;
+  height: 34px;
+  background-color: #212121;
+  border-radius: 50%;
+}
+
+.contacts__phones {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 30px;
+}
+.contacts__phones h3 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.contacts__phone {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+.contacts__phone h2 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 38px;
+  letter-spacing: 0em;
+}
+.contacts__phone p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #616161;
+}
+
+.contacts__works {
+  display: flex;
+  margin-bottom: 25px;
+}
+.contacts__works h6 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  margin-bottom: 10px;
+}
+.contacts__works p {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #616161;
+  margin-bottom: 8px;
+}
+
+.contacts__works_column {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+
+.contacts__btn {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  color: #616161;
+  padding: 10px;
+  border-radius: 40px;
+  border: 1px solid #B7B7B7;
+  width: 100%;
+}
+
+.contacts__map {
+  width: 100%;
+}
+.contacts__map iframe {
+  width: 100%;
+  height: 469px;
+  border-radius: 10px;
+}
+
+.page__title h1 {
+  font-size: 86px;
+  font-weight: 600;
+  line-height: 86px;
+  letter-spacing: -0.02em;
+  margin-bottom: 40px;
+}
+
+.doors {
+  margin-bottom: 180px;
+}
+.doors .container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.doors__elements {
+  display: flex;
+  gap: 20px;
+}
+
+.doors__left {
+  width: 24%;
+}
+
+.doors__left_box {
+  padding: 30px;
+  border-radius: 10px;
+  border: 1px solid #B7B7B7;
+}
+.doors__left_box h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  margin-bottom: 270px;
+  text-transform: uppercase;
+}
+.doors__left_box p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: #616161;
+}
+
+.doors__cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.doors__card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.doors__card_img_box {
+  max-width: 325px;
+  border-radius: 10px;
+  background-color: #B7B7B7;
+  padding: 46px 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.doors__card_title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.doors__card_price {
+  margin-top: -4px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.doors__btn {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 40px;
+  background-color: #B7B7B7;
+  color: #616161;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  width: 100%;
+}
+
 .footer__items {
   border: #B7B7B7 1px solid;
   padding: 40px;
