@@ -700,7 +700,7 @@ header, footer {
 }
 
 footer {
-  margin-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 main {
@@ -2588,6 +2588,346 @@ button.swiper-pagination-bullet {
 .header__row_phones a {
   color: #212121;
   cursor: pointer;
+}
+
+.main__Banner {
+  margin-bottom: 40px;
+}
+.main__Banner .container {
+  display: flex;
+}
+
+.main__Banner_left {
+  width: 41%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  border-radius: 20px;
+  border: #B7B7B7 1px solid;
+  padding: 32px 44px;
+}
+.main__Banner_left h1 {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0em;
+}
+.main__Banner_left p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+}
+
+.main__Banner_rigth {
+  width: 59%;
+  position: relative;
+}
+
+.main__Banner_rigth_box_btn {
+  display: flex;
+  gap: 6px;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+
+.main__Banner_rigth_btn {
+  width: 10px;
+  height: 10px;
+  background-color: #B7B7B7;
+  border-radius: 50%;
+}
+
+.main__Banner_rigth_btn_active {
+  background-color: #212121;
+}
+
+.main__cards {
+  margin-bottom: 180px;
+}
+.main__cards .container {
+  display: flex;
+}
+
+.main__cards_card {
+  border-radius: 10px;
+  border: 1px solid #B7B7B7;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-right: 10%;
+  min-height: 240px;
+}
+
+.main__cards_card_title {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: 0em;
+}
+
+.main__cards_card_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #616161;
+  max-width: 162px;
+}
+
+.main__catalog {
+  margin-bottom: 180px;
+}
+
+.main__catalog_title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.main__catalog_table {
+  display: flex;
+  gap: 30px;
+  margin: 0 0 20px;
+  cursor: pointer;
+}
+
+.main__catalog_table_title {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  color: #b6b6b6;
+  text-transform: uppercase;
+}
+
+.main__catalog_table_title_active {
+  color: #212121;
+}
+
+.main__catalog_box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.main__catalog_card_box {
+  padding: 52px 92px;
+  background-color: #b7b7b7;
+  border-radius: 6px;
+}
+
+.main__catalog_card_title {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+  margin: 10px 0 6px;
+}
+
+.main__catalog_card_price {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.main__catalog_card_nav .main__catalog_card_box {
+  height: calc(100% - 58px);
+  background: none;
+  border: 1px solid #b7b7b7;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.main__catalog_card_nav .main__catalog_card_box img {
+  cursor: pointer;
+}
+
+.main__catalog_btn {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0em;
+  border-radius: 40px;
+  width: 100%;
+  border: #b7b7b7 1px solid;
+  padding: 10px;
+  background: none;
+  cursor: pointer;
+  color: #616161;
+  margin-top: 20px;
+}
+
+.main__work {
+  margin-bottom: 180px;
+}
+.main__work .container {
+  display: flex;
+}
+
+.main__work_left {
+  width: 41%;
+}
+.main__work_left h3 {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+}
+
+.main__work_rigth {
+  width: 59%;
+}
+
+.main__work_rigth_card {
+  border: 1px solid #b7b7b7;
+  border-radius: 10px;
+}
+
+.main__work_rigth_card_active .main__work_rigth_card_box {
+  background-color: #b7b7b7;
+}
+.main__work_rigth_card_active .main__work_rigth_card_box_title {
+  color: #212121;
+}
+
+.main__work_rigth_card_box {
+  border-radius: 8px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.main__work_rigth_card_box_title {
+  color: #616161;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+}
+
+.main__work_rigth_card_box_text {
+  color: #616161;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  padding: 20px 30px;
+}
+
+.main__question {
+  margin-bottom: 180px;
+}
+
+.main__question_title {
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  margin-bottom: 40px;
+}
+
+.main__question_box {
+  display: flex;
+  flex-direction: column;
+}
+.main__question_box:first-child {
+  border-top: #b7b7b7 1px solid;
+}
+
+.main__question_box_card {
+  display: flex;
+  flex-direction: column;
+  border-bottom: #b7b7b7 1px solid;
+  cursor: pointer;
+}
+
+.main__question_box_card_el {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.main__question_box_card_el_box {
+  width: 59%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__question_box_num {
+  width: 41%;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.main__question_box_title {
+  color: #616161;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.main__question_box_subtitle {
+  margin-left: 41%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  margin-bottom: 20px;
+  max-width: 630px;
+}
+
+.main__question_box_card_active .main__question_box_num {
+  color: #212121;
+}
+.main__question_box_card_active .main__question_box_title {
+  color: #212121;
+}
+
+.other__product {
+  margin-bottom: 180px;
+}
+.other__product .container {
+  display: flex;
+}
+.other__product .container h3 {
+  width: 41%;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
+}
+
+.other__product_box {
+  width: 59%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.other__product_box_card {
+  color: #212121;
+}
+.other__product_box_card h6 {
+  margin-top: 8px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-transform: uppercase;
 }
 
 .nav__box {
