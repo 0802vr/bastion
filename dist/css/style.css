@@ -2702,7 +2702,7 @@ button.swiper-pagination-bullet {
     padding: 8px 0 0 0;
   }
   .header__row_phones_pl {
-    margin-top: 36px;
+    margin-top: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
@@ -2830,7 +2830,8 @@ button.swiper-pagination-bullet {
   margin-bottom: 180px;
 }
 .main__cards .container {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .main__cards_card {
@@ -3707,6 +3708,10 @@ button.swiper-pagination-bullet {
 
 .doors__left_box {
   padding: 30px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   border-radius: 10px;
   border: 1px solid #B7B7B7;
 }
@@ -3715,7 +3720,6 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   line-height: 43px;
   letter-spacing: 0em;
-  margin-bottom: 270px;
   text-transform: uppercase;
 }
 .doors__left_box p {
@@ -3724,6 +3728,10 @@ button.swiper-pagination-bullet {
   line-height: 20px;
   letter-spacing: 0em;
   color: #616161;
+}
+
+.doors__rigth {
+  width: 100%;
 }
 
 .doors__cards {
@@ -3740,13 +3748,16 @@ button.swiper-pagination-bullet {
 }
 
 .doors__card_img_box {
-  max-width: 325px;
+  /* max-width: 325px;  */
   border-radius: 10px;
   background-color: #B7B7B7;
   padding: 46px 92px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.doors__card_img_box img {
+  width: 100%;
 }
 
 .doors__card_title {
