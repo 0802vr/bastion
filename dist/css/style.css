@@ -3914,9 +3914,9 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 960px) {
-  .doors__card_img_box {
-    padding: 8% 16%;
-  }
+  /* .doors__card_img_box {
+      padding: 8% 16%;
+  } */
 }
 @media (max-width: 800px) {
   .doors__btn {
