@@ -3920,6 +3920,7 @@ button.swiper-pagination-bullet {
   .doors__left_box {
     flex-direction: row;
     justify-content: space-between;
+    gap: 20px;
     padding: 40px;
   }
   .doors__left_box h3, .doors__left_box p {
@@ -3966,10 +3967,11 @@ button.swiper-pagination-bullet {
 @media (max-width: 600px) {
   .doors__left_box {
     flex-direction: column;
+    padding: 20px;
     gap: 10px;
   }
   .doors__left_box h3, .doors__left_box p {
-    width: 90%;
+    width: 100%;
   }
 }
 .footer__items {
