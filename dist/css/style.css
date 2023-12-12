@@ -2832,6 +2832,11 @@ button.swiper-pagination-bullet {
 .main__Banner_rigth {
   width: 59%;
   position: relative;
+  background-image: url(../../img/main/Subtract.png);
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: 100%;
+  overflow: hidden;
 }
 .main__Banner_rigth img {
   width: 100%;
@@ -2857,6 +2862,43 @@ button.swiper-pagination-bullet {
   background-color: #212121;
 }
 
+@media (min-width: 1440px) {
+  .main__Banner_left h1 {
+    font-size: 48px;
+  }
+  .main__Banner_left p {
+    font-size: 18px;
+  }
+  .main__Banner_rigth_btn {
+    width: 15px;
+    height: 15px;
+  }
+}
+@media (max-width: 1350px) {
+  .main__Banner_left h1 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 1250px) {
+  .main__Banner_left h1 {
+    font-size: 34px;
+  }
+}
+@media (max-width: 1150px) {
+  .main__Banner_left h1 {
+    font-size: 30px;
+  }
+  .main__Banner .container {
+    flex-direction: column;
+  }
+  .main__Banner .main__Banner_left {
+    width: 100%;
+  }
+  .main__Banner .main__Banner_rigth {
+    width: 100%;
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 90%, 79% 90%, 79% 100%, 0 100%, 0% 70%, 0% 35%, 0 0);
+  }
+}
 .main__cards {
   margin-bottom: 180px;
 }
@@ -2893,6 +2935,14 @@ button.swiper-pagination-bullet {
   max-width: 162px;
 }
 
+@media (min-width: 1440px) {
+  .main__cards_card_title {
+    font-size: 42px;
+  }
+  .main__cards_card_text {
+    font-size: 18px;
+  }
+}
 .main__catalog {
   margin-bottom: 180px;
 }
@@ -2993,6 +3043,23 @@ button.swiper-pagination-bullet {
   margin-top: 20px;
 }
 
+@media (min-width: 1440px) {
+  .main__catalog_title {
+    font-size: 38px;
+  }
+  .main__catalog_table_title {
+    font-size: 20px;
+  }
+  .main__catalog_card_title {
+    font-size: 20px;
+  }
+  .main__catalog_card_price {
+    font-size: 20px;
+  }
+  .main__catalog_btn {
+    font-size: 20px;
+  }
+}
 .main__work {
   margin-bottom: 180px;
 }
@@ -3043,6 +3110,10 @@ button.swiper-pagination-bullet {
   text-transform: uppercase;
 }
 
+.main__work_rigth_card {
+  margin-bottom: -2px;
+}
+
 .main__work_rigth_card_box_text {
   color: #616161;
   font-size: 16px;
@@ -3052,6 +3123,18 @@ button.swiper-pagination-bullet {
   padding: 20px 30px;
 }
 
+@media (min-width: 1440px) {
+  .main__work_left h3 {
+    font-size: 38px;
+  }
+  .main__work_rigth_card_box_title {
+    font-size: 22px;
+  }
+  .main__work_rigth_card_box_text {
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
 .main__question {
   margin-bottom: 180px;
 }
@@ -3115,7 +3198,7 @@ button.swiper-pagination-bullet {
   line-height: 18px;
   letter-spacing: 0em;
   margin-bottom: 20px;
-  max-width: 630px;
+  max-width: 40%;
 }
 
 .main__question_box_card_active .main__question_box_num {
@@ -3125,6 +3208,23 @@ button.swiper-pagination-bullet {
   color: #212121;
 }
 
+@media (min-width: 1440px) {
+  .main__question_title {
+    font-size: 38px;
+  }
+  .main__question_box_title {
+    font-size: 22px;
+  }
+  .main__question_box_subtitle {
+    font-size: 18px;
+    line-height: 120%;
+  }
+}
+@media (max-width: 1250px) {
+  .main__question_box_subtitle {
+    max-width: 500px;
+  }
+}
 .other__product {
   margin-bottom: 180px;
 }
@@ -3158,7 +3258,18 @@ button.swiper-pagination-bullet {
   letter-spacing: 0em;
   text-transform: uppercase;
 }
+.other__product_box_card img {
+  width: 100%;
+}
 
+@media (min-width: 1440px) {
+  .other__product .container h3 {
+    font-size: 38px;
+  }
+  .other__product_box_card h6 {
+    font-size: 22px;
+  }
+}
 .nav__box {
   display: flex;
   align-items: center;
