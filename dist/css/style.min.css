@@ -3873,7 +3873,7 @@ button.swiper-pagination-bullet {
 
 .checkbox_input:checked + label::before {
   border-color: #212121;
-  background-image: url("../../img/ok.svg");
+  background-image: url("./../img/ok.svg");
 }
 
 .request__btn {
