@@ -2877,7 +2877,7 @@ button.swiper-pagination-bullet {
 .main__Banner_rigth_box_btn::before {
   content: "";
   position: absolute;
-  background-image: url(../../img/main/leftImg.svg);
+  background-image: url(./../img/main/leftImg.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -2889,7 +2889,7 @@ button.swiper-pagination-bullet {
 .main__Banner_rigth_box_btn::after {
   content: "";
   position: absolute;
-  background-image: url(../../img/main/rigthImg.svg);
+  background-image: url(./../img/main/rigthImg.svg);
   background-size: 100%;
   background-repeat: no-repeat;
   background-position: center;
