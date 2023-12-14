@@ -950,12 +950,12 @@ main {
 
 .swiper-button-prev,
 .swiper-button-next {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   transform: translateY(-50%);
   width: 40px;
   height: 40px;
-  z-index: 10;
+  z-index: 10; */
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -998,7 +998,8 @@ main {
 
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
-  left: 20px;
+  /* left: 20px;
+  */
 }
 @media (max-width: 1400px) {
   .swiper-button-prev,
@@ -1009,7 +1010,7 @@ main {
 
 .swiper-button-next,
 .swiper-rtl .swiper-button-prev {
-  right: 20px;
+  /* right: 20px; */
 }
 @media (max-width: 1400px) {
   .swiper-button-next,
@@ -1040,7 +1041,7 @@ main {
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
-  margin: 23px 0 0 5px;
+  /*  margin: 23px 0 0 5px; */
 }
 
 .swiper-pagination.swiper-pagination-hidden {
@@ -1048,14 +1049,13 @@ main {
 }
 
 /* Common Styles */
-.swiper-pagination-fraction,
+/* .swiper-pagination-fraction,
 .swiper-pagination-custom,
-.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-horizontal>.swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  left: 0;
-  width: 100%;
-}
-
+   left: 0;
+  width: 100%; 
+} */
 /* Bullets */
 .swiper-pagination-bullets-dynamic {
   overflow: hidden;
@@ -1093,13 +1093,12 @@ main {
 
 .swiper-pagination-bullet {
   width: 12px;
-  height: 12px;
+  height: 10px;
   display: inline-block;
   border-radius: 50%;
-  background: rgba(0, 0, 0, 0.25);
+  background-color: #b7b7b7;
   position: relative;
   cursor: pointer;
-  margin: 0 22px 0 0 !important;
 }
 .swiper-pagination-bullet:after {
   content: "";
@@ -1107,9 +1106,9 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 22px;
-  height: 22px;
-  border: 1px solid #8613A5;
+  width: 12px;
+  height: 12px;
+  background-color: #212121;
   display: none;
   border-radius: 50%;
 }
@@ -1160,11 +1159,10 @@ button.swiper-pagination-bullet {
   transition: 200ms transform, 200ms top;
 }
 
-.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+/* .swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 4px);
-}
-
+} */
 .swiper-horizontal > .swiper-pagination-bullets.swiper-pagination-bullets-dynamic,
 .swiper-pagination-horizontal.swiper-pagination-bullets.swiper-pagination-bullets-dynamic {
   left: 50%;
@@ -2567,6 +2565,11 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   line-height: 17px;
   letter-spacing: 0em;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.header__catalog_box a:hover {
+  color: #B7B7B7;
 }
 
 .header__row_menu_other {
@@ -2833,12 +2836,16 @@ button.swiper-pagination-bullet {
   display: flex;
 }
 
-.main__Banner_img {
-  height: 0;
-  opacity: 0;
-}
+/* .main__Banner_img {
+    height: 0;     
+    opacity: 0;
 
+}
 .main__Banner_img_active {
+
+
+} */
+.main__Banner_img {
   display: block;
   width: 100%;
   height: 100%;
@@ -2873,11 +2880,20 @@ button.swiper-pagination-bullet {
   width: 59%;
   position: relative;
   display: inline-flex;
+  overflow: hidden;
+}
+
+.main__Banner_rigth.swiper {
+  overflow: hidden !important;
+}
+
+.main__Banner_rigth_box {
+  display: inline-flex;
   background-repeat: no-repeat;
   width: 100%;
   background-size: 100%;
-  overflow: hidden;
 }
+
 .main__Banner_rigth_box_btn {
   display: flex;
   justify-content: space-between;
@@ -2961,6 +2977,7 @@ button.swiper-pagination-bullet {
   .main__Banner_left {
     gap: 20px;
     padding: 30px;
+    width: 100%;
   }
   .main__Banner_left h1 {
     font-size: 30px;
@@ -2969,6 +2986,9 @@ button.swiper-pagination-bullet {
   }
   .main__Banner_left p {
     width: 70%;
+  }
+  .main__Banner_rigth {
+    width: 100%;
   }
   .main__Banner .container {
     flex-direction: column;
@@ -3176,6 +3196,10 @@ button.swiper-pagination-bullet {
   cursor: pointer;
 }
 
+.main__catalog_card.swiper-slide {
+  width: auto !important;
+}
+
 .main__catalog_card_box {
   padding: 17% 29%;
   background-color: #b7b7b7;
@@ -3205,6 +3229,9 @@ button.swiper-pagination-bullet {
   letter-spacing: 0em;
 }
 
+.main__catalog_card_nav {
+  position: relative;
+}
 .main__catalog_card_nav .main__catalog_card_box {
   height: calc(100% - 58px);
   background: none;
@@ -3982,7 +4009,7 @@ button.swiper-pagination-bullet {
   background-image: url("./../img/ok.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 70%;
+  background-size: 10px;
 }
 
 .request__btn {
@@ -4063,6 +4090,7 @@ button.swiper-pagination-bullet {
   .request__title {
     font-size: 48px;
     margin-bottom: 10px;
+    line-height: 100%;
   }
   .request__box_row {
     flex-direction: column;
@@ -4101,10 +4129,18 @@ button.swiper-pagination-bullet {
   .request__title {
     font-size: 36px;
     margin-bottom: 0;
+    line-height: 70px;
   }
   .checkbox_input + label {
     display: flex;
     flex-wrap: wrap;
+  }
+}
+@media (max-width: 380px) {
+  .request__title {
+    line-height: 120%;
+    margin-bottom: 20px;
+    margin-top: -8px;
   }
 }
 .contacts {
@@ -4178,6 +4214,11 @@ button.swiper-pagination-bullet {
   font-weight: 500;
   line-height: 38px;
   letter-spacing: 0em;
+  transition: all 0.4s;
+  cursor: pointer;
+}
+.contacts__phone h2:hover {
+  color: #616161;
 }
 .contacts__phone p {
   font-size: 16px;
@@ -4515,7 +4556,7 @@ button.swiper-pagination-bullet {
   line-height: 23px;
   letter-spacing: 0em;
   width: 100%;
-  background-color: #f4f4f4;
+  background-color: #d9d9d9;
   transition: all 0.4s linear;
 }
 
@@ -4793,7 +4834,7 @@ button.swiper-pagination-bullet {
   }
   .footer__left_table {
     row-gap: 20px;
-    column-gap: 150px;
+    column-gap: 130px;
   }
 }
 @media (max-width: 550px) {
@@ -4839,6 +4880,7 @@ button.swiper-pagination-bullet {
   top: 0;
   left: 0;
   background-color: rgba(99, 99, 99, 0.3019607843);
+  z-index: 10;
 }
 
 .modal_overflow {
@@ -4852,7 +4894,7 @@ button.swiper-pagination-bullet {
   flex-direction: column;
   z-index: 2;
   position: relative;
-  margin: 138px 40px;
+  margin: 138px 40px 0;
 }
 
 .modal_close {
@@ -4862,6 +4904,10 @@ button.swiper-pagination-bullet {
   right: 40px;
   top: 68px;
   cursor: pointer;
+}
+
+.modal_close + img + svg {
+  fill: #D9D9D9;
 }
 
 .modal_box {
@@ -5099,6 +5145,7 @@ button.swiper-pagination-bullet {
   justify-content: center;
   background-color: #B7B7B7;
   border-radius: 20px;
+  border: 1px solid #D9D9D9;
   padding: 20px;
 }
 .modal_elements_contact img {
