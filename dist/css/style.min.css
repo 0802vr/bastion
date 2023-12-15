@@ -1348,6 +1348,7 @@ button.swiper-pagination-bullet {
 .swiper-grid-column > .swiper-wrapper {
   flex-wrap: wrap;
   flex-direction: column;
+  /* flex-direction: unset !important; */
 }
 
 .swiper-fade.swiper-free-mode .swiper-slide {
@@ -2596,6 +2597,10 @@ button.swiper-pagination-bullet {
 }
 .header__row_menu_contact a {
   color: #212121;
+  transition: all 0.4s;
+}
+.header__row_menu_contact a:hover {
+  color: #B7B7B7;
 }
 
 .header__row_phones {
@@ -2622,6 +2627,7 @@ button.swiper-pagination-bullet {
 
 .header_pl_burger {
   display: none;
+  height: 0;
 }
 
 .header_pl_burger.header_pl_burger_active {
@@ -2632,9 +2638,37 @@ button.swiper-pagination-bullet {
   background-color: #E7E7E7;
   border-radius: 20px;
   min-width: 360px;
+  transition: all 0.4s;
   z-index: 2;
+  animation: faidMenuBurger 0.4s linear forwards;
+}
+@keyframes faidMenuBurger {
+  from {
+    margin-top: 20px;
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    height: 40%;
+    max-height: calc(425px + 1vw);
+  }
 }
 
+/* .header_pl_burger_active .header_pl_burger_box {
+   animation: ffff .4s linear forwards;
+
+   @keyframes ffff {
+    from {
+
+        height: 0;
+    }
+    to {
+
+        height: auto;
+    }
+   }
+} */
 @media (max-width: 1200px) {
   .header {
     padding: 20px 0;
@@ -2659,6 +2693,8 @@ button.swiper-pagination-bullet {
     display: grid;
     gap: 20px;
     padding: 10px 30px 30px 30px;
+    transition: all 0.4s;
+    /*  transform: scale(0); */
   }
   .header_pl_burger_box input {
     border-radius: 20px;
@@ -2773,6 +2809,18 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 450px) {
+  @keyframes faidMenuBurger {
+    from {
+      margin-top: 20px;
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      height: 42%;
+      max-height: 440px;
+    }
+  }
   .header_pl_burger.header_pl_burger_active {
     right: 10px;
   }
@@ -2808,6 +2856,18 @@ button.swiper-pagination-bullet {
   }
 }
 @media (max-width: 400px) {
+  @keyframes faidMenuBurger {
+    from {
+      margin-top: 20px;
+      height: 0;
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+      height: 42%;
+      max-height: 500px;
+    }
+  }
   .header_pl_burger.header_pl_burger_active {
     min-width: 300px;
   }
@@ -2951,6 +3011,7 @@ button.swiper-pagination-bullet {
   }
   .main__Banner_left p {
     font-size: 18px;
+    width: 90%;
   }
   .main__Banner_rigth_btn {
     width: 12px;
@@ -3086,7 +3147,7 @@ button.swiper-pagination-bullet {
   line-height: 18px;
   letter-spacing: 0em;
   color: #616161;
-  max-width: 162px;
+  max-width: 200px;
 }
 
 @media (min-width: 1440px) {
@@ -3190,14 +3251,53 @@ button.swiper-pagination-bullet {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 20px;
+  position: relative;
 }
 
+.catalog_container {
+  position: relative;
+}
+
+/* .catalog_container .main__catalog_card {
+    height: auto;
+} */
 .main__catalog_card {
   cursor: pointer;
+  display: block;
+  opacity: 1;
+  animation: fadeInFromNone 1s ease-in-out;
+  /* width: 25vw !important;
+  height: 35vw !important; */
+}
+.main__catalog_card .main__catalog_card_box {
+  transition: all 1s;
+  transform: rotate(180deg);
 }
 
-.main__catalog_card.swiper-slide {
-  width: auto !important;
+@keyframes fadeInFromNone {
+  0% {
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+    height: 100%;
+    transform: translateX(-10%);
+  }
+  100% {
+    display: block;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/* .main__catalog_card.swiper-slide {
+    width: auto !important;
+} */
+.card_active_catalog {
+  display: none;
+  opacity: 0;
+  transition: all 0.4s;
 }
 
 .main__catalog_card_box {
@@ -3230,7 +3330,11 @@ button.swiper-pagination-bullet {
 }
 
 .main__catalog_card_nav {
-  position: relative;
+  /* position: absolute;
+  right: 0;
+  bottom: 0;
+  height: calc(50% - 10px);
+  width: calc(25% - 20px); */
 }
 .main__catalog_card_nav .main__catalog_card_box {
   height: calc(100% - 58px);
@@ -3243,6 +3347,11 @@ button.swiper-pagination-bullet {
 }
 .main__catalog_card_nav .main__catalog_card_box img {
   cursor: pointer;
+  pointer-events: none;
+}
+.main__catalog_card_nav .main__catalog_card_box img.btn_active_catalog {
+  pointer-events: auto;
+  fill: grey;
 }
 
 .main__catalog_btn {
@@ -3745,6 +3854,10 @@ button.swiper-pagination-bullet {
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0em;
+  transition: all 0.4s;
+}
+.nav__box a:hover {
+  color: #B7B7B7;
 }
 .nav__box .nav__box_last_el {
   width: fit-content;
@@ -4180,6 +4293,10 @@ button.swiper-pagination-bullet {
   gap: 10px;
   margin-bottom: 30px;
   cursor: pointer;
+  transition: all 0.4s;
+}
+.contacts__link:hover div {
+  transform: rotate(45deg);
 }
 .contacts__link div {
   background-image: url(./../img/contacts/Black.svg);
@@ -4189,6 +4306,7 @@ button.swiper-pagination-bullet {
   height: 34px;
   background-color: #212121;
   border-radius: 50%;
+  transition: all 0.4s;
 }
 
 .contacts__phones {
@@ -4467,12 +4585,11 @@ button.swiper-pagination-bullet {
 
 .doors__left_box {
   padding: 30px;
-  height: 100%;
+  height: 85%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 10px;
-  transition: all 0.4s;
   border: 1px solid #B7B7B7;
 }
 .doors__left_box h3 {
@@ -4558,6 +4675,13 @@ button.swiper-pagination-bullet {
   width: 100%;
   background-color: #d9d9d9;
   transition: all 0.4s linear;
+}
+.doors__btn.doors__btn_active_touch {
+  background-color: #B7B7B7;
+}
+.doors__btn:hover {
+  background-color: #212121;
+  color: #fff;
 }
 
 .doors__card:nth-child(n+4) {
