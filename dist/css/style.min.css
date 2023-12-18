@@ -3559,7 +3559,7 @@ button.swiper-pagination-bullet {
 }
 
 .main__work_rigth_card {
-  margin-bottom: -2px;
+  margin-bottom: -1px;
 }
 
 .main__work_rigth_card_box_text {
@@ -4635,7 +4635,7 @@ button.swiper-pagination-bullet {
 
 .doors__left_box {
   padding: 30px;
-  height: 85%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -4668,7 +4668,7 @@ button.swiper-pagination-bullet {
 .doors__cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
+  column-gap: 20px;
   width: 100%;
   transform: translate3d(0px, 0px, 0px);
   transition: all 0.4s;
@@ -4691,6 +4691,7 @@ button.swiper-pagination-bullet {
   display: flex;
   align-items: center;
   justify-content: center;
+  height: 100%;
 }
 .doors__card_img_box img {
   width: 100%;
@@ -4854,6 +4855,7 @@ button.swiper-pagination-bullet {
   .doors__cards {
     display: flex;
     gap: 20px;
+    overflow: visible;
   }
   .doors__card {
     width: 280px;
