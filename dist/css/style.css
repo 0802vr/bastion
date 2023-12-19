@@ -2526,6 +2526,7 @@ button.swiper-pagination-bullet {
   background: none;
   width: 109px;
   transition: all 0.4s;
+  height: 34px;
 }
 .header__search input:focus {
   width: 250px;
@@ -3374,14 +3375,14 @@ button.swiper-pagination-bullet {
   gap: 30px;
   align-items: center;
   justify-content: center;
-}
-.main__catalog_card_nav .main__catalog_card_box img {
-  cursor: pointer;
-  pointer-events: none;
-}
-.main__catalog_card_nav .main__catalog_card_box img.btn_active_catalog {
-  pointer-events: auto;
-  fill: grey;
+  /* img{
+      cursor: pointer;
+      pointer-events: none;
+      &.btn_active_catalog{
+          pointer-events: auto;
+          fill: grey;
+      }
+  } */
 }
 
 .main__catalog_btn {
@@ -3406,6 +3407,45 @@ button.swiper-pagination-bullet {
 
 .main__catalog_pl_other_doors {
   display: none;
+}
+
+.main_catalog_box_swiper {
+  display: flex;
+  gap: 20px;
+}
+
+.main__catalog_card_nav {
+  width: 25%;
+}
+
+#catalog_ex, #catalog_ex_2, #catalog_ex_3, #catalog_ex_4 {
+  overflow: hidden;
+}
+
+#catalog_ex_2, #catalog_ex_4 {
+  width: 75%;
+}
+
+#catalog_ex .main__catalog_box {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 0;
+}
+
+#catalog_ex_3 .main__catalog_box {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 0;
+}
+
+#catalog_ex_2 .main__catalog_box {
+  display: flex;
+  gap: 0;
+}
+
+#catalog_ex_4 .main__catalog_box {
+  display: flex;
+  gap: 0;
 }
 
 @media (min-width: 1440px) {
