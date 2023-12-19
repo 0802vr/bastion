@@ -3302,7 +3302,7 @@ button.swiper-pagination-bullet {
 }
 .main__catalog_card .main__catalog_card_box {
   transition: all 1s;
-  transform: rotate(180deg);
+  /* transform: rotate(180deg); */
 }
 
 @keyframes fadeInFromNone {
@@ -3418,15 +3418,21 @@ button.swiper-pagination-bullet {
   width: 25%;
 }
 
-#catalog_ex, #catalog_ex_2, #catalog_ex_3, #catalog_ex_4 {
+#catalog_ex, #catalog_ex_2, #catalog_ex_3, #catalog_ex_4, #catalog_ex_1_1, #catalog_ex_2_1 {
   overflow: hidden;
 }
 
-#catalog_ex_2, #catalog_ex_4 {
+#catalog_ex_2, #catalog_ex_2_1, #catalog_ex_4 {
   width: 75%;
 }
 
 #catalog_ex .main__catalog_box {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 0;
+}
+
+#catalog_ex_1_1 .main__catalog_box {
   display: flex;
   margin-bottom: 20px;
   gap: 0;
@@ -3443,9 +3449,30 @@ button.swiper-pagination-bullet {
   gap: 0;
 }
 
+#catalog_ex_2_1 .main__catalog_box {
+  display: flex;
+  gap: 0;
+}
+
 #catalog_ex_4 .main__catalog_box {
   display: flex;
   gap: 0;
+}
+
+#catalog_mob_3 {
+  display: none;
+}
+
+.main__catalog_toogle {
+  display: none;
+}
+
+.main__catalog_toogle_active {
+  display: block;
+}
+
+.main__catalog_mobile {
+  display: none;
 }
 
 @media (min-width: 1440px) {
@@ -3469,6 +3496,12 @@ button.swiper-pagination-bullet {
   .main__catalog_box {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  #catalog_ex_2, #catalog_ex_4 {
+    width: 66.6666666667%;
+  }
+  .main__catalog_card_nav {
+    width: 33.3333333333%;
+  }
   .main__catalog_card:nth-child(6) {
     display: none;
   }
@@ -3484,6 +3517,14 @@ button.swiper-pagination-bullet {
 @media (max-width: 750px) {
   .main__catalog {
     margin-bottom: 90px;
+  }
+  .main__catalog_toogle {
+    display: none;
+  }
+  .main__catalog_mobile {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
   .main__catalog_table_title:nth-child(2) {
     display: none;
@@ -3511,10 +3552,16 @@ button.swiper-pagination-bullet {
     gap: 20px;
   }
   .main__catalog_btn {
-    display: none;
+    margin-top: 0;
   }
   .catalog_container {
     overflow-x: hidden;
+  }
+  #catalog_mob_3 {
+    display: block;
+  }
+  #catalog_ex_3, #catalog_ex_4 {
+    display: none;
   }
 }
 .main__work {
