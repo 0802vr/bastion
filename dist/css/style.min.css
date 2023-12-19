@@ -3525,6 +3525,7 @@ button.swiper-pagination-bullet {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    overflow: hidden;
   }
   .main__catalog_table_title:nth-child(2) {
     display: none;
@@ -3559,6 +3560,7 @@ button.swiper-pagination-bullet {
   }
   #catalog_mob_3 {
     display: block;
+    overflow: hidden;
   }
   #catalog_ex_3, #catalog_ex_4 {
     display: none;
