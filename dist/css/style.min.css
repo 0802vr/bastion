@@ -5304,11 +5304,14 @@ button.swiper-pagination-bullet {
   gap: 40px;
 }
 .modal_box_table_column_description_row p {
-  width: 49%;
+  width: 50%;
   font-size: 18px;
   font-weight: 400;
   line-height: 20px;
   letter-spacing: 0em;
+}
+.modal_box_table_column_description_row div {
+  width: 50%;
 }
 
 .modal_box_table_row_titles {
