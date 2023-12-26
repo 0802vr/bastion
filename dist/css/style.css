@@ -2296,7 +2296,8 @@ button.swiper-pagination-bullet {
 
 [data-aos^=fade][data-aos^=fade].aos-animate {
   opacity: 1;
-  transform: translateZ(0);
+  transform: translate3d(0, 0, 0);
+  transform: unset;
 }
 
 [data-aos=fade-up] {
@@ -2917,6 +2918,8 @@ button.swiper-pagination-bullet {
 }
 .main__Banner {
   margin-bottom: 40px;
+  /* position: relative;
+  z-index: -1; */
 }
 .main__Banner .container {
   display: flex;
@@ -4145,6 +4148,8 @@ button.swiper-pagination-bullet {
   }
 }
 .nav__box {
+  /*          position: relative;
+       z-index: -1; */
   display: flex;
   align-items: center;
   gap: 8px;
@@ -5654,7 +5659,7 @@ button.swiper-pagination-bullet {
   padding: 20px;
 }
 .modal_elements_contact img {
-  width: 300px;
+  width: 50%;
 }
 
 .modal_box_table_row_titles_box {
