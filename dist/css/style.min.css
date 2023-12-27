@@ -5895,7 +5895,7 @@ button.swiper-pagination-bullet {
     gap: 10px;
   }
   .modal_box_price_new {
-    font-size: 20px;
+    font-size: 26px;
   }
   .modal_box_price_last {
     font-size: 18px;
@@ -5905,5 +5905,20 @@ button.swiper-pagination-bullet {
   .modal_box_have_box {
     flex-direction: column;
     gap: 10px;
+  }
+}
+@media (max-width: 360px) {
+  .modal_box_price_new {
+    font-size: 24px;
+  }
+}
+@media (max-width: 340px) {
+  .modal_box_price_new {
+    font-size: 22px;
+  }
+}
+@media (max-width: 330px) {
+  .modal_box_price_new {
+    font-size: 20px;
   }
 }
