@@ -5892,10 +5892,10 @@ button.swiper-pagination-bullet {
     gap: 10px;
   }
   .modal_box_price_new {
-    font-size: 18px;
+    font-size: 20px;
   }
   .modal_box_price_last {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 @media (max-width: 380px) {
