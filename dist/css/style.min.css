@@ -5611,6 +5611,7 @@ button.swiper-pagination-bullet {
   height: 300px;
   border-radius: 10px;
   background-color: #616161;
+  opacity: 0.6;
 }
 
 .modal_box_table_column_description_active {
@@ -5682,7 +5683,7 @@ button.swiper-pagination-bullet {
 .modal_elements_contact img {
   border-radius: 20px;
   width: 100%;
-  max-height: 880px;
+  max-height: 750px;
 }
 
 .modal_box_table_row_titles_box {
@@ -5730,9 +5731,12 @@ button.swiper-pagination-bullet {
   .modal_box_table_rigth_title {
     font-size: 36px;
   }
-  .modal_box_type, .modal_box_price {
+  .modal_box_type {
     flex-direction: column;
     gap: 10px;
+  }
+  .modal_box_price_new {
+    font-size: 28px;
   }
   .modal_box_table_left:first-child {
     height: fit-content;
@@ -5777,9 +5781,12 @@ button.swiper-pagination-bullet {
   .modal_box_table_rigth {
     width: 100%;
   }
-  .modal_box_type, .modal_box_price {
+  .modal_box_type {
     flex-direction: row;
     gap: 30px;
+  }
+  .modal_box_stocks {
+    margin-bottom: 30px;
   }
   .modal_box_table_column_description_row {
     flex-direction: column;
@@ -5810,10 +5817,18 @@ button.swiper-pagination-bullet {
     padding-right: 10px;
   }
   .modal_contact.active_modal .modal_close {
+    right: 50px;
+  }
+}
+@media (max-width: 650px) {
+  .modal_contact.active_modal .modal_close {
     right: 20px;
   }
 }
 @media (max-width: 600px) {
+  .modal_contact.active_modal .modal_close {
+    right: 20px;
+  }
   .modal_box_table_rigth_title {
     font-size: 32px;
   }
@@ -5859,7 +5874,7 @@ button.swiper-pagination-bullet {
     width: fit-content !important;
     padding-left: 10px;
   }
-  .modal_box_type, .modal_box_price {
+  .modal_box_type {
     flex-direction: column;
     gap: 10px;
   }
@@ -5870,6 +5885,12 @@ button.swiper-pagination-bullet {
 @media (max-width: 440px) {
   .modal_box_stocks_text {
     width: 220px;
+  }
+}
+@media (max-width: 400px) {
+  .modal_box_price {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 @media (max-width: 380px) {
