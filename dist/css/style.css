@@ -5745,6 +5745,9 @@ button.swiper-pagination-bullet {
   .modal_box_table_left:first-child img {
     width: 60%;
   }
+  .modal_box_stocks {
+    margin-bottom: 30px;
+  }
 }
 @media (max-width: 960px) {
   .modal_box_table_left:first-child {
